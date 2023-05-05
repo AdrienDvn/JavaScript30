@@ -18,30 +18,60 @@
       p.style.fontSize = '50px';
     }
 
-    // Regular
+    // Regular //////////////////////////////////////////
+// console.log('wassup');
 
-    // Interpolated
+    // Interpolated /////////////////////////////////////////
+    let brr = 'hotshot';
+    console.log(`hello i am a fat ${brr}`);
 
-    // Styled
+    // Styled ///////////////////////////////////////////////
 
-    // warning!
+    // console.log('%c i am some great text, homie', 'font-size:50px; background:grey; text-shadow:5px 5px white');
+  //
 
-    // Error :|
+  // warning! ////////////////////////////////////////////////////
+  //  console.warn("OH NOOO seems like there's an error my guy !");
 
-    // Info
+    // Error :|////////////////////////////////////////////////
+  // console.error('FUCK the software is not running properly')
+    // Info ///////////////////////////////////////////////////
+    // console.info('meow meow meow meow said my cat at 3AM')
+    // Testing ///////////////////////////////////////////////
+    // console.assert(1===1, 'that is wrong my G!') // will only display is the assertion is wrong !!
 
-    // Testing
+    // clearing /////////////////////////////////////////////
+    // console.clear() // clear the console, litteraly !
 
-    // clearing
-
-    // Viewing DOM Elements
-
+    // Viewing DOM Elements ////////////////////
+    // console.log(p);
+    // console.dir(p)
+    // console.clear();
     // Grouping together
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      console.log(`This is my cutie ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age}`);
+      console.log(`${dog.name} is ${dog.age * 7} in human years !`);
+      console.groupEnd(`${dog.name}`);
+    })
+    // counting ////////////////////////////////////////
+    console.count('Wes');
+    console.count('Wes');
+    console.count('Wes');
+    console.count('bob');
+    console.count('Wes'); // counts iterations basically;
+    // timing //////////////////////////////////////
+    console.time('fetching data');
+    fetch('https://api.github.com/users.wesbos')
+      .then (data => data.json())
+      .then (data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      })
 
-    // counting
-
-    // timing
-
+      //good to know how long things are taking :)
+      console.table(dogs)
   </script>
 </body>
 </html>
