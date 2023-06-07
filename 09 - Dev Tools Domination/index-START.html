@@ -34,9 +34,11 @@
   //  console.warn("OH NOOO seems like there's an error my guy !");
 
     // Error :|////////////////////////////////////////////////
-  // console.error('FUCK the software is not running properly')
+  // console.error('FUCK, the software is not running properly')
+
     // Info ///////////////////////////////////////////////////
-    // console.info('meow meow meow meow said my cat at 3AM')
+    // console.info('meow meow meow said my cat at 3AM')
+
     // Testing ///////////////////////////////////////////////
     // console.assert(1===1, 'that is wrong my G!') // will only display is the assertion is wrong !!
 
@@ -47,7 +49,8 @@
     // console.log(p);
     // console.dir(p)
     // console.clear();
-    // Grouping together
+
+    // Grouping together ///////////////////////
     dogs.forEach(dog => {
       console.group(`${dog.name}`);
       console.log(`This is my cutie ${dog.name}`);
@@ -61,6 +64,7 @@
     console.count('Wes');
     console.count('bob');
     console.count('Wes'); // counts iterations basically;
+
     // timing //////////////////////////////////////
     console.time('fetching data');
     fetch('https://api.github.com/users.wesbos')
